@@ -1,0 +1,98 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#top {
+  position: absolute;
+  background-color: transparent;
+  display: flex;
+  width: 100%;
+  z-index: 100;
+  justify-content: center;
+  align-items: center;
+}
+#top .logo {
+  font-size: 12px;
+  font-family: "Rubik";
+  font-weight: 400;
+  letter-spacing: 4px;
+}
+#top .containerHeader {
+  display: flex;
+  width: 80%;
+  height: 50px;
+  align-items: center;
+  justify-content: space-between;
+}
+#top .navbar ul {
+  display: flex;
+  gap: 40px;
+  justify-content: space-between;
+  list-style: none;
+}
+#top .navbar ul a {
+  text-decoration: none;
+}
+#top .icons {
+  display: flex;
+  gap: 25px;
+}
+
+#hero {
+  display: flex;
+  justify-content: center;
+}
+#hero .containerOneSec {
+  width: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+#hero .containerOneSec .textsec {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 25px;
+}
+#hero .containerOneSec .textsec h1 {
+  font-size: 64px;
+  font-family: "Rubik";
+  font-weight: 600;
+  letter-spacing: 14px;
+}
+#hero .containerOneSec .textsec p {
+  font-size: 18px;
+  font-family: "Rubik";
+  font-weight: 400;
+}
+#hero .containerOneSec .textsec .spans {
+  font-size: 24px;
+  font-family: "Rubik";
+  font-weight: 500;
+}
+#hero .containerOneSec .textsec .spans .beforePrice {
+  margin-left: 10px;
+  color: #6C757D;
+}
+#hero .containerOneSec .textsec .buttons {
+  margin-top: 20px;
+}
+#hero .containerOneSec .textsec .buttons .shop {
+  background-color: #2580FF;
+  color: white;
+}
+#hero .containerOneSec .textsec button {
+  font-family: "Rubik";
+  padding: 11px;
+  width: 120px;
+  border: 2px solid #2580FF;
+  color: #2580FF;
+}
+#hero .containerOneSec .imgsec img {
+  width: 529px;
+  height: 688px;
+  position: relative;
+}

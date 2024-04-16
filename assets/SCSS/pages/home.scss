@@ -1,0 +1,472 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#top {
+    position: absolute;
+    background-color: transparent;
+    display: flex;
+    width: 100%;
+
+    z-index: 1990;
+    justify-content: center;
+    align-items: center;
+
+    .logo {
+        font-size: 12px;
+        font-family: "Rubik";
+        font-weight: 400;
+        letter-spacing: 4px;
+        cursor: pointer;
+        a{
+            text-decoration: none;
+            color: #000000;
+        }
+    }
+
+
+    .containerHeader {
+        display: flex;
+        width: 60%;
+        align-items: center;
+        justify-content: space-between;
+        height: 100px;
+    }
+
+    .navbar ul {
+        display: flex;
+
+        gap: 40px;
+        justify-content: space-between;
+        list-style: none;
+
+        a {
+            text-decoration: none;
+            color: #000000;
+        }
+
+        .down {
+            position: relative;
+
+        }
+
+        .drop {
+            display: none;
+            position: absolute;
+            border-top: 2px solid #0068F9;
+
+        }
+
+        .drop li {
+            background-color: #F4F5F9;
+            display: block;
+            justify-content: start;
+            align-items: center;
+            padding: 19px;
+
+        }
+
+        .down:hover .drop {
+            display: block;
+            flex-direction: column;
+            width: 145px;
+
+        }
+
+        .downn {
+            position: relative;
+
+        }
+
+        .dropp {
+            display: none;
+            position: absolute;
+            border-top: 2px solid #0068F9;
+            left: 144px;
+            top: 10px;
+        }
+
+        .dropp li {
+            background-color: #F4F5F9;
+            display: block;
+            justify-content: start;
+            align-items: center;
+            padding: 19px;
+
+        }
+
+        .downn:hover .dropp {
+
+            display: block;
+            flex-direction: column;
+            width: 145px;
+
+        }
+    }
+
+    .icons {
+        display: flex;
+        gap: 25px;
+
+        i {
+            color: #000000;
+        }
+
+
+        .fa-basket-shopping {
+            position: absolute;
+        }
+
+        .bascetOne {
+            position: relative;
+            padding: 7px;
+            font-size: 8px;
+            bottom: 30px;
+            left: 10px;
+            background-color: #0068F9;
+            text-align: center;
+            border-radius: 100%;
+            color: white;
+        }
+
+
+    }
+
+}
+
+#hero {
+    display: flex;
+    justify-content: center;
+    background-color: #F9F9F9;
+
+    .containerOneSec {
+        width: 60%;
+        display: flex;
+
+        align-items: center;
+        justify-content: space-between;
+
+        .textsec {
+            h1 {
+                font-size: 64px;
+                font-family: "Rubik";
+                font-weight: 600;
+                letter-spacing: 14px;
+            }
+
+            p {
+                font-size: 18px;
+                font-family: "Rubik";
+                font-weight: 400;
+
+            }
+
+            .spans {
+
+                font-size: 24px;
+                font-family: "Rubik";
+                font-weight: 500;
+
+                .beforePrice {
+                    margin-left: 10px;
+                    color: #6C757D;
+                }
+
+            }
+
+            .buttons {
+                margin-top: 20px;
+
+                .shop:hover {
+                    background-color: #075dd6;
+                }
+
+                .shopOne:hover {
+                    background-color: #0068F9;
+                    color: white;
+                    transition: 0.5s;
+                }
+
+                .shop {
+                    background-color: #2580FF;
+                    color: white;
+                    transition: 0.3s;
+
+
+                }
+            }
+
+            button {
+                font-family: "Rubik";
+                padding: 11px;
+                width: 120px;
+                border: 2px solid #2580FF;
+                color: #2580FF;
+                cursor: pointer;
+
+            }
+
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            gap: 25px;
+        }
+
+        .imgsec img {
+            width: 634px;
+            height: 800px;
+            vertical-align: middle;
+            position: relative;
+
+        }
+    }
+
+}
+
+#productsSec {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin: 40px 0;
+
+    .container {
+        width: 95%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+
+        .productsCards {
+            width: 100%;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: center;
+
+            .productsCard {
+                width: 33.3333%;
+                display: flex;
+                flex-wrap: wrap;
+                text-align: center;
+                align-items: center;
+                border: 1px solid rgb(128, 128, 128);
+                gap: 8px;
+                height: 700px;
+                position: relative;
+
+                &:hover {
+                    .cardDesc button {
+                        transition: 0.6s;
+
+                        display: block;
+                    }
+
+                    img {
+                        transform: scale(0.8);
+                        transition: transform 0.3s ease;
+                    }
+                }
+
+                img {
+                    width: 90%;
+                    height: 400px;
+                    transition: 0.3s;
+                }
+
+                .cardDesc {
+                    margin-bottom: 30px;
+                    gap: 10px;
+                    width: 100%;
+
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+                    align-items: center;
+
+                    h3 {
+                        font-size: 35px;
+                        font-family: "Rubik";
+                        font-weight: 350;
+                    }
+
+                    span {
+                        color: rgb(128, 128, 128);
+                        font-size: 24px;
+                        font-family: "Rubik";
+                    }
+
+                    strong {
+                        font-size: 24px;
+                        font-family: "Rubik";
+                    }
+
+                    button {
+                        background-color: black;
+                        color: white;
+                        width: 80%;
+                        font-size: 18px;
+                        font-family: "Rubik";
+                        border: 1px solid black;
+                        padding: 15px 30px;
+                        display: none;
+                        bottom: -1px;
+                        position: absolute;
+                        transition: 0.6s;
+                        margin-bottom: 10px;
+                        cursor: pointer;
+
+                        &:hover {
+                            background-color: #ffffff;
+                            color: #000000;
+                            transition: 0.6s;
+                        }
+
+                    }
+                }
+            }
+        }
+
+    }
+
+}
+
+
+
+.cart .productBtn:hover {
+    background-color: #F4F5F9;
+    color: black;
+}
+
+#block {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background-color: #F9F9F9;
+
+    .containerBlok {
+        display: flex;
+        margin-top: 5%;
+        justify-content: end;
+        margin-bottom: 5%;
+
+        width: 65%;
+
+        .imgsec {
+            width: 60%;
+
+
+            img {
+                width: 100%;
+            }
+        }
+
+        .textBlok {
+            margin-top: 30px;
+            width: 40%;
+
+            gap: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            button:hover {
+                background-color: #333333;
+                transition: 0.4s;
+            }
+
+            p {
+                font-size: 18px;
+                font-family: "Rubik";
+
+            }
+
+            .endBlok {
+                text-align: center;
+            }
+
+            h4 {
+                font-size: 70px;
+                font-family: "Rubik";
+
+                .endBlok {
+                    text-align: center;
+                }
+
+            }
+
+            button {
+                width: 120px;
+                background-color: #000000;
+                color: white;
+                padding: 10px;
+                font-size: 14px;
+                font-family: "Rubik";
+                border: none;
+                transition: 0.4s;
+
+            }
+        }
+    }
+}
+
+#siteSection {
+    display: flex;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    .siteProduct {
+        display: flex;
+        margin-top: 30px;
+
+    }
+
+    .siteProduct {
+        text-align: center;
+        display: flex;
+        justify-content: center;
+    }
+
+    .cartt {
+        border: 1px solid #C4C4C4;
+
+        img {
+            width: 350px;
+            height: 500px;
+        }
+
+        .proDesc {
+            gap: 10px;
+            display: flex;
+            justify-content: center;
+            margin-bottom: 20px;
+            flex-direction: column;
+
+            h3 {
+                font-size: 35px;
+                font-family: "Rubik";
+                font-weight: 350;
+            }
+
+            span {
+                color: rgb(128, 128, 128);
+                font-size: 24px;
+                font-family: "Rubik";
+            }
+
+            strong {
+                font-size: 24px;
+                font-family: "Rubik";
+            }
+        }
+    }
+}
